@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/kategorie/vitragestangen", {data:[{_img:{"/_ipx/f_webp,q_90,s_407x229/assets/images/images/gardinia-spannstange-23-26-mm-weisz-125-cm-220-cm-gardinia-9260977-1.jpg":"\u002Fassets\u002Fimages\u002Fgardinia-spannstange-23-26-mm-weisz-125-cm-220-cm-gardinia-9260977-1.webp"}}],fetch:{},mutations:void 0});
