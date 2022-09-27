@@ -1,19 +1,5 @@
 [
     {
-        "key": "tesa",
-        "name": "Tesa",
-        "slug": "tesa",
-        "productCategory": "Tesa",
-        "localThumb": "/assets/images/hersteller/tesa.webp"
-    },
-    {
-        "key": "cocoon",
-        "name": "Cocoon",
-        "slug": "cocoon",
-        "productCategory": "Cocoon",
-        "localThumb": "/assets/images/hersteller/cocoon.webp"
-    },
-    {
         "key": "sonstige",
         "name": "Sonstige",
         "slug": "sonstige",
@@ -21,66 +7,213 @@
         "localThumb": "/assets/images/hersteller/sonstige.webp"
     },
     {
-        "key": "gardinia",
-        "name": "Gardinia",
-        "slug": "gardinia",
-        "productCategory": "Gardinia",
-        "localThumb": "/assets/images/hersteller/gardinia.webp"
+        "key": "gabiona",
+        "name": "Gabiona",
+        "slug": "gabiona",
+        "productCategory": "Gabiona",
+        "localThumb": "/assets/images/hersteller/gabiona.webp"
     },
     {
-        "key": "obi",
-        "name": "OBI",
-        "slug": "obi",
-        "productCategory": "OBI",
-        "localThumb": "/assets/images/hersteller/obi.webp"
+        "key": "bellissa",
+        "name": "Bellissa",
+        "slug": "bellissa",
+        "productCategory": "Bellissa",
+        "localThumb": "/assets/images/hersteller/bellissa.webp"
     },
     {
-        "key": "moondream",
-        "name": "Moondream",
-        "slug": "moondream",
-        "productCategory": "Moondream",
-        "localThumb": "/assets/images/hersteller/moondream.webp"
+        "key": "vitavia",
+        "name": "Vitavia",
+        "slug": "vitavia",
+        "productCategory": "Vitavia",
+        "localThumb": "/assets/images/hersteller/vitavia.webp"
     },
     {
-        "key": "mydeco",
-        "name": "mydeco",
-        "slug": "mydeco",
-        "productCategory": "mydeco",
-        "localThumb": "/assets/images/hersteller/mydeco.webp"
+        "key": "garantia",
+        "name": "Garantia",
+        "slug": "garantia",
+        "productCategory": "Garantia",
+        "localThumb": "/assets/images/hersteller/garantia.webp"
     },
     {
-        "key": "thermacell",
-        "name": "Thermacell",
-        "slug": "thermacell",
-        "productCategory": "Thermacell",
-        "localThumb": "/assets/images/hersteller/thermacell.webp"
+        "key": "pergart",
+        "name": "Pergart",
+        "slug": "pergart",
+        "productCategory": "Pergart",
+        "localThumb": "/assets/images/hersteller/pergart.webp"
     },
     {
-        "key": "cmi",
-        "name": "CMI",
-        "slug": "cmi",
-        "productCategory": "CMI",
-        "localThumb": "/assets/images/hersteller/cmi.webp"
+        "key": "kiehn-holz",
+        "name": "Kiehn-Holz",
+        "slug": "kiehn-holz",
+        "productCategory": "Kiehn-Holz",
+        "localThumb": "/assets/images/hersteller/kiehn-holz.webp"
     },
     {
-        "key": "guttagliss",
-        "name": "guttagliss",
-        "slug": "guttagliss",
-        "productCategory": "guttagliss",
-        "localThumb": "/assets/images/hersteller/guttagliss.webp"
+        "key": "wagner design yourself",
+        "name": "Wagner design yourself",
+        "slug": "wagner-design-yourself",
+        "productCategory": "Wagner design yourself",
+        "localThumb": "/assets/images/hersteller/wagner-design-yourself.webp"
     },
     {
-        "key": "windhager",
-        "name": "Windhager",
-        "slug": "windhager",
-        "productCategory": "Windhager",
-        "localThumb": "/assets/images/hersteller/windhager.webp"
+        "key": "dobar",
+        "name": "Dobar",
+        "slug": "dobar",
+        "productCategory": "Dobar",
+        "localThumb": "/assets/images/hersteller/dobar.webp"
     },
     {
-        "key": "velux",
-        "name": "Velux",
-        "slug": "velux",
-        "productCategory": "Velux",
-        "localThumb": "/assets/images/hersteller/velux.webp"
+        "key": "tetzner und jentzsch",
+        "name": "Tetzner und Jentzsch",
+        "slug": "tetzner-und-jentzsch",
+        "productCategory": "Tetzner und Jentzsch",
+        "localThumb": "/assets/images/hersteller/tetzner-und-jentzsch.webp"
+    },
+    {
+        "key": "herstera garden",
+        "name": "Herstera Garden",
+        "slug": "herstera-garden",
+        "productCategory": "Herstera Garden",
+        "localThumb": "/assets/images/hersteller/herstera-garden.webp"
+    },
+    {
+        "key": "biohort",
+        "name": "Biohort",
+        "slug": "biohort",
+        "productCategory": "Biohort",
+        "localThumb": "/assets/images/hersteller/biohort.webp"
+    },
+    {
+        "key": "noor",
+        "name": "Noor",
+        "slug": "noor",
+        "productCategory": "Noor",
+        "localThumb": "/assets/images/hersteller/noor.webp"
+    },
+    {
+        "key": "floraworld",
+        "name": "Floraworld",
+        "slug": "floraworld",
+        "productCategory": "Floraworld",
+        "localThumb": "/assets/images/hersteller/floraworld.webp"
+    },
+    {
+        "key": "gutta",
+        "name": "Gutta",
+        "slug": "gutta",
+        "productCategory": "Gutta",
+        "localThumb": "/assets/images/hersteller/gutta.webp"
+    },
+    {
+        "key": "siena garden",
+        "name": "Siena Garden",
+        "slug": "siena-garden",
+        "productCategory": "Siena Garden",
+        "localThumb": "/assets/images/hersteller/siena-garden.webp"
+    },
+    {
+        "key": "westmann",
+        "name": "Westmann",
+        "slug": "westmann",
+        "productCategory": "Westmann",
+        "localThumb": "/assets/images/hersteller/westmann.webp"
+    },
+    {
+        "key": "khw",
+        "name": "KHW",
+        "slug": "khw",
+        "productCategory": "KHW",
+        "localThumb": "/assets/images/hersteller/khw.webp"
+    },
+    {
+        "key": "juwel",
+        "name": "Juwel",
+        "slug": "juwel",
+        "productCategory": "Juwel",
+        "localThumb": "/assets/images/hersteller/juwel.webp"
+    },
+    {
+        "key": "prosperplast",
+        "name": "PROSPERPLAST",
+        "slug": "prosperplast",
+        "productCategory": "PROSPERPLAST",
+        "localThumb": "/assets/images/hersteller/prosperplast.webp"
+    },
+    {
+        "key": "gaspo",
+        "name": "GASPO",
+        "slug": "gaspo",
+        "productCategory": "GASPO",
+        "localThumb": "/assets/images/hersteller/gaspo.webp"
+    },
+    {
+        "key": "karibu",
+        "name": "Karibu",
+        "slug": "karibu",
+        "productCategory": "Karibu",
+        "localThumb": "/assets/images/hersteller/karibu.webp"
+    },
+    {
+        "key": "weka",
+        "name": "Weka",
+        "slug": "weka",
+        "productCategory": "Weka",
+        "localThumb": "/assets/images/hersteller/weka.webp"
+    },
+    {
+        "key": "exit toys",
+        "name": "Exit Toys",
+        "slug": "exit-toys",
+        "productCategory": "Exit Toys",
+        "localThumb": "/assets/images/hersteller/exit-toys.webp"
+    },
+    {
+        "key": "wilk",
+        "name": "Wilk",
+        "slug": "wilk",
+        "productCategory": "Wilk",
+        "localThumb": "/assets/images/hersteller/wilk.webp"
+    },
+    {
+        "key": "andrewex",
+        "name": "Andrewex",
+        "slug": "andrewex",
+        "productCategory": "Andrewex",
+        "localThumb": "/assets/images/hersteller/andrewex.webp"
+    },
+    {
+        "key": "woodfeeling",
+        "name": "Woodfeeling",
+        "slug": "woodfeeling",
+        "productCategory": "Woodfeeling",
+        "localThumb": "/assets/images/hersteller/woodfeeling.webp"
+    },
+    {
+        "key": "rettenmeier outdoor wood",
+        "name": "Rettenmeier Outdoor Wood",
+        "slug": "rettenmeier-outdoor-wood",
+        "productCategory": "Rettenmeier Outdoor Wood",
+        "localThumb": "/assets/images/hersteller/rettenmeier-outdoor-wood.webp"
+    },
+    {
+        "key": "kgt",
+        "name": "KGT",
+        "slug": "kgt",
+        "productCategory": "KGT",
+        "localThumb": "/assets/images/hersteller/kgt.webp"
+    },
+    {
+        "key": "gartenfreude",
+        "name": "Gartenfreude",
+        "slug": "gartenfreude",
+        "productCategory": "Gartenfreude",
+        "localThumb": "/assets/images/hersteller/gartenfreude.webp"
+    },
+    {
+        "key": "promadino",
+        "name": "Promadino",
+        "slug": "promadino",
+        "productCategory": "Promadino",
+        "localThumb": "/assets/images/hersteller/promadino.webp"
     }
 ]
