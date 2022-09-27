@@ -1,0 +1,86 @@
+[
+    {
+        "key": "tesa",
+        "name": "Tesa",
+        "slug": "tesa",
+        "productCategory": "Tesa",
+        "localThumb": "/assets/images/hersteller/tesa.webp"
+    },
+    {
+        "key": "cocoon",
+        "name": "Cocoon",
+        "slug": "cocoon",
+        "productCategory": "Cocoon",
+        "localThumb": "/assets/images/hersteller/cocoon.webp"
+    },
+    {
+        "key": "sonstige",
+        "name": "Sonstige",
+        "slug": "sonstige",
+        "productCategory": "Sonstige",
+        "localThumb": "/assets/images/hersteller/sonstige.webp"
+    },
+    {
+        "key": "gardinia",
+        "name": "Gardinia",
+        "slug": "gardinia",
+        "productCategory": "Gardinia",
+        "localThumb": "/assets/images/hersteller/gardinia.webp"
+    },
+    {
+        "key": "obi",
+        "name": "OBI",
+        "slug": "obi",
+        "productCategory": "OBI",
+        "localThumb": "/assets/images/hersteller/obi.webp"
+    },
+    {
+        "key": "moondream",
+        "name": "Moondream",
+        "slug": "moondream",
+        "productCategory": "Moondream",
+        "localThumb": "/assets/images/hersteller/moondream.webp"
+    },
+    {
+        "key": "mydeco",
+        "name": "mydeco",
+        "slug": "mydeco",
+        "productCategory": "mydeco",
+        "localThumb": "/assets/images/hersteller/mydeco.webp"
+    },
+    {
+        "key": "thermacell",
+        "name": "Thermacell",
+        "slug": "thermacell",
+        "productCategory": "Thermacell",
+        "localThumb": "/assets/images/hersteller/thermacell.webp"
+    },
+    {
+        "key": "cmi",
+        "name": "CMI",
+        "slug": "cmi",
+        "productCategory": "CMI",
+        "localThumb": "/assets/images/hersteller/cmi.webp"
+    },
+    {
+        "key": "guttagliss",
+        "name": "guttagliss",
+        "slug": "guttagliss",
+        "productCategory": "guttagliss",
+        "localThumb": "/assets/images/hersteller/guttagliss.webp"
+    },
+    {
+        "key": "windhager",
+        "name": "Windhager",
+        "slug": "windhager",
+        "productCategory": "Windhager",
+        "localThumb": "/assets/images/hersteller/windhager.webp"
+    },
+    {
+        "key": "velux",
+        "name": "Velux",
+        "slug": "velux",
+        "productCategory": "Velux",
+        "localThumb": "/assets/images/hersteller/velux.webp"
+    }
+]

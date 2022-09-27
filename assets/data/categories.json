@@ -1,0 +1,107 @@
+[
+    {
+        "key": "insektenschutz",
+        "name": "Insektenschutz",
+        "slug": "insektenschutz",
+        "productCategory": "Insektenschutz",
+        "subCategories": []
+    },
+    {
+        "key": "fliegengittertüren",
+        "name": "Fliegengittertüren",
+        "slug": "fliegengitterturen",
+        "productCategory": "Fliegengittertüren",
+        "subCategories": []
+    },
+    {
+        "key": "plissees",
+        "name": "Plissees",
+        "slug": "plissees",
+        "productCategory": "Plissees",
+        "subCategories": []
+    },
+    {
+        "key": "insektenschutzrahmen",
+        "name": "Insektenschutzrahmen",
+        "slug": "insektenschutzrahmen",
+        "productCategory": "Insektenschutzrahmen",
+        "subCategories": []
+    },
+    {
+        "key": "stil- & seilspanngarnituren",
+        "name": "Stil- & Seilspanngarnituren",
+        "slug": "stil-seilspanngarnituren",
+        "productCategory": "Stil- & Seilspanngarnituren",
+        "subCategories": []
+    },
+    {
+        "key": "lamellenvorhänge",
+        "name": "Lamellenvorhänge",
+        "slug": "lamellenvorhange",
+        "productCategory": "Lamellenvorhänge",
+        "subCategories": []
+    },
+    {
+        "key": "rollos & raffrollos",
+        "name": "Rollos & Raffrollos",
+        "slug": "rollos-raffrollos",
+        "productCategory": "Rollos & Raffrollos",
+        "subCategories": []
+    },
+    {
+        "key": "jalousien",
+        "name": "Jalousien",
+        "slug": "jalousien",
+        "productCategory": "Jalousien",
+        "subCategories": []
+    },
+    {
+        "key": "gardinenschienen",
+        "name": "Gardinenschienen",
+        "slug": "gardinenschienen",
+        "productCategory": "Gardinenschienen",
+        "subCategories": []
+    },
+    {
+        "key": "fenstervorhänge",
+        "name": "Fenstervorhänge",
+        "slug": "fenstervorhange",
+        "productCategory": "Fenstervorhänge",
+        "subCategories": []
+    },
+    {
+        "key": "vitragestangen",
+        "name": "Vitragestangen",
+        "slug": "vitragestangen",
+        "productCategory": "Vitragestangen",
+        "subCategories": []
+    },
+    {
+        "key": "insektenschutzzubehör",
+        "name": "Insektenschutzzubehör",
+        "slug": "insektenschutzzubehor",
+        "productCategory": "Insektenschutzzubehör",
+        "subCategories": []
+    },
+    {
+        "key": "türdichtungen & fensterdichtungen",
+        "name": "Türdichtungen & Fensterdichtungen",
+        "slug": "turdichtungen-fensterdichtungen",
+        "productCategory": "Türdichtungen & Fensterdichtungen",
+        "subCategories": []
+    },
+    {
+        "key": "fliegengitterfenster",
+        "name": "Fliegengitterfenster",
+        "slug": "fliegengitterfenster",
+        "productCategory": "Fliegengitterfenster",
+        "subCategories": []
+    },
+    {
+        "key": "insektenschutznetze",
+        "name": "Insektenschutznetze",
+        "slug": "insektenschutznetze",
+        "productCategory": "Insektenschutznetze",
+        "subCategories": []
+    }
+]
