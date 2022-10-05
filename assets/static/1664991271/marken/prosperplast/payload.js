@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/marken/prosperplast", {data:[{_img:{"/_ipx/f_webp,q_90,s_407x229/assets/images/images/prosperplast-hochbeet-rattanoptik-60-cm-x-25-cm-x-46-cm-anthrazit-prosperplast-3242658-1.jpg":"\u002Fassets\u002Fimages\u002Fprosperplast-hochbeet-rattanoptik-60-cm-x-25-cm-x-46-cm-anthrazit-prosperplast-3242658-1.webp"}}],fetch:{},mutations:void 0});
