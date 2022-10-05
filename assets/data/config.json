@@ -1,12 +1,12 @@
 {
-    "configIsReady": false,
-    "domain": "wassersport24.net",
-    "hostname": "https://wassersport24.net/",
-    "email": "wassersport24.net@surrealnetworks.io",
-    "organization": "wassersport24.net",
-    "logoText": "Wassersport24.net",
-    "title": "title",
-    "subline": "subline",
+    "configIsReady": true,
+    "domain": "hochbee.de",
+    "hostname": "https://www.hochbee.de/",
+    "email": "hochbee.desurrealnetworks.io",
+    "organization": "hochbee.de",
+    "logoText": "Hochbee.de",
+    "title": "Hochbeete",
+    "subline": "Der Online Shop f\u00fcr Hochbeete",
     "companyAddress": "Uvoz 159/26 - Praha 1 - Hradcany, CZ",
     "imageFolder": "/assets/images/images/",
     "productUrl": "/produkt/",
@@ -14,9 +14,27 @@
     "numberOfProductsOnStartpage": 18,
     "numberMaximumProductsPerCategory": 100,
     "numberOfRelevantProduct": 12,
-    "popularProducts": [],
-    "winnerProducts": [],
-    "featuredCategories": [],
+    "popularProducts": [
+        "7102759",
+        "9764416",
+        "3905544",
+        "5686233",
+        "8539223",
+        "2591022"
+    ],
+    "winnerProducts": [
+        "3803434",
+        "7270572",
+        "8079246"
+    ],
+    "featuredCategories": [
+        "Holz-Hochbeete",
+        "Kunststoff-Hochbeete",
+        "Kunststoff-Hochbeete",
+        "Fr\u00fchbeete",
+        "Kunststoff-Hochbeete",
+        "Holz-Hochbeete"
+    ],
     "socialMediaAccounts": [],
     "imageQuality": 90,
     "checklist": [
@@ -28,37 +46,33 @@
     "seo": {
         "htmlLang": "de",
         "mainKeyword": "Hochbeete",
-        "featureText": "Your featured text goes here",
+        "featureText": "Hochbeete sind ideal f\u00fcr den Anbau von Gem\u00fcse und Kr\u00e4utern. Sie sind leicht zu pflegen und geben Ihrem Garten ein nat\u00fcrliches Aussehen. Im Hochbeet-Shop finden Sie alles, was Sie f\u00fcr Ihr Hochbeet ben\u00f6tigen. Wir bieten Ihnen eine gro\u00dfe Auswahl an Hochbeeten, Erde, D\u00fcnger und Pflanzen.",
         "index": {
-            "title": "",
-            "metaDescription": "",
-            "robots": "nofollow, noindex",
+            "title": "Hochbeete - die beste Art, Ihren Garten zu gestalten!",
+            "metaDescription": "Hochbeete f\u00fcr Ihren Garten - kaufen Sie bei uns die besten Hochbeete aus Holz, Metall oder Kunststoff.",
+            "robots": "index, follow",
             "texts": [
                 {
-                    "title": "Title of a SEO Text",
-                    "text": "Text of a SEO Text"
-                },
-                {
-                    "title": "New title",
-                    "text": "new text"
+                    "title": "Hochbeete: Die besten Tipps f\u00fcr Anf\u00e4nger",
+                    "text": "Ein Hochbeet ist ein Beet, das h\u00f6her als ein herk\u00f6mmliches Beet ist. Hochbeete sind ideal f\u00fcr den Anbau von Gem\u00fcse und Kr\u00e4utern, da sie dem Pflanzenwachstum mehr W\u00e4rme und Feuchtigkeit bieten. Hochbeete k\u00f6nnen aus verschiedenen Materialien wie Holz, Stein oder Metall hergestellt werden."
                 }
             ]
         },
         "shop": {
-            "title": "",
-            "metaDescription": "",
-            "robots": "nofollow, noindex"
+            "title": "Hochbeete Shop: Dein Online-Shop f\u00fcr Hochbeete",
+            "metaDescription": "Hochbeete Shop - Hier findest du alles rund um das Thema Hochbeete. Von Erde \u00fcber Pflanzen bis hin zu Zubeh\u00f6r - alles was du f\u00fcr dein Hochbeet brauchst!",
+            "robots": "index, follow"
         },
         "hersteller": {
-            "title": "",
-            "metaDescription": "",
-            "robots": "nofollow, noindex"
+            "title": "Hochbeete: Die besten Hersteller im Vergleich",
+            "metaDescription": "Hochbeete von Top-Markenherstellern. Kaufen Sie Ihr Hochbeet bei uns zum g\u00fcnstigen Preis!",
+            "robots": "index, follow"
         }
     },
     "productSeo": {
-        "defaultTitle": "",
-        "defaultMetaDescription": "",
-        "defaultRobots": "nofollow, noindex",
+        "defaultTitle": "Hochbeete - $PRODUKT f\u00fcr Ihren Garten",
+        "defaultMetaDescription": "$PRODUKT von $HERSTELLER ist das ideale Hochbeet f\u00fcr Ihren Garten. $KATEGORIE sorgt f\u00fcr eine optimale Pflanzenentwicklung.",
+        "defaultRobots": "index, follow",
         "products": [
             {
                 "sku": "5637909794",
@@ -72,9 +86,9 @@
         ]
     },
     "categorySeo": {
-        "defaultTitle": "",
-        "defaultMetaDescription": "",
-        "defaultRobots": "nofollow, noindex",
+        "defaultTitle": "Hochbeete: $KATEGORIE f\u00fcr sch\u00f6ne G\u00e4rten",
+        "defaultMetaDescription": "Hochbeete $KATEGORIE \u2013 Gartengestaltung mit Hochbeeten. Tipps und Tricks f\u00fcr die Anlage und Pflege von Hochbeeten.",
+        "defaultRobots": "index, follow",
         "categories": [
             {
                 "key": "sporthosen",
@@ -100,8 +114,8 @@
     },
     "brandSeo": {
         "defaultTitle": "",
-        "defaultMetaDescription": "",
-        "defaultRobots": "nofollow, noindex",
+        "defaultMetaDescription": "$HERSTELLER Hochbeete sind die perfekte L\u00f6sung f\u00fcr alle, die in ihrem Garten mehr Pflanzen anbauen m\u00f6chten. Durch die erh\u00f6hte Position ist das Beet leichter zu bew\u00e4ssern und die Pflanzen bekommen mehr Licht.",
+        "defaultRobots": "index, follow",
         "brands": [
             {
                 "key": "palm",
@@ -118,26 +132,30 @@
         {
             "title": "Start",
             "linkTo": "/",
-            "linkTitle": "Wassersport",
+            "linkTitle": "Hochbeete",
             "publish": true
         },
         {
             "title": "Shop",
             "linkTo": "/shop/",
-            "linkTitle": "Wassersport Shop",
+            "linkTitle": "Hochbeete Shop",
             "publish": true
         },
         {
             "title": "Marken",
             "linkTo": "/marken/",
-            "linkTitle": "Wassersport Marken",
+            "linkTitle": "Hochbeete Marken",
             "publish": true
         },
         {
             "title": "Kontakt",
             "linkTo": "/kontakt/",
-            "linkTitle": "Wassersport Kontakt",
+            "linkTitle": "Kontakt",
             "publish": false
         }
-    ]
+    ],
+    "ai": {
+        "enabled": true,
+        "engine": 1
+    }
 }
