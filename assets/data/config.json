@@ -1,12 +1,12 @@
 {
-    "configIsReady": true,
+    "configIsReady": false,
     "domain": "hochbee.de",
     "hostname": "https://www.hochbee.de/",
     "email": "hochbee.desurrealnetworks.io",
     "organization": "hochbee.de",
     "logoText": "Hochbee.de",
     "title": "Hochbeete",
-    "subline": "Der Online Shop f\u00fcr Hochbeete",
+    "subline": "Der Online Shop für Hochbeete",
     "companyAddress": "Uvoz 159/26 - Praha 1 - Hradcany, CZ",
     "imageFolder": "/assets/images/images/",
     "productUrl": "/produkt/",
@@ -31,7 +31,7 @@
         "Holz-Hochbeete",
         "Kunststoff-Hochbeete",
         "Kunststoff-Hochbeete",
-        "Fr\u00fchbeete",
+        "Frühbeete",
         "Kunststoff-Hochbeete",
         "Holz-Hochbeete"
     ],
@@ -46,48 +46,48 @@
     "seo": {
         "htmlLang": "de",
         "mainKeyword": "Hochbeete",
-        "featureText": "Hochbeete sind ideal f\u00fcr den Anbau von Gem\u00fcse und Kr\u00e4utern. Sie sind leicht zu pflegen und geben Ihrem Garten ein nat\u00fcrliches Aussehen. Im Hochbeet-Shop finden Sie alles, was Sie f\u00fcr Ihr Hochbeet ben\u00f6tigen. Wir bieten Ihnen eine gro\u00dfe Auswahl an Hochbeeten, Erde, D\u00fcnger und Pflanzen.",
+        "featureText": "Hochbeete sind ideal für den Anbau von Gemüse und Kräutern. Sie sind leicht zu pflegen und geben Ihrem Garten ein natürliches Aussehen. Im Hochbeet-Shop finden Sie alles, was Sie für Ihr Hochbeet benötigen. Wir bieten Ihnen eine große Auswahl an Hochbeeten, Erde, Dünger und Pflanzen.",
         "index": {
             "title": "Hochbeete - die beste Art, Ihren Garten zu gestalten!",
-            "metaDescription": "Hochbeete f\u00fcr Ihren Garten - kaufen Sie bei uns die besten Hochbeete aus Holz, Metall oder Kunststoff.",
+            "metaDescription": "Hochbeete für Ihren Garten - kaufen Sie bei uns die besten Hochbeete aus Holz, Metall oder Kunststoff.",
             "robots": "index, follow",
             "texts": [
                 {
-                    "title": "Hochbeete: Die besten Tipps f\u00fcr Anf\u00e4nger",
-                    "text": "Ein Hochbeet ist ein Beet, das h\u00f6her als ein herk\u00f6mmliches Beet ist. Hochbeete sind ideal f\u00fcr den Anbau von Gem\u00fcse und Kr\u00e4utern, da sie dem Pflanzenwachstum mehr W\u00e4rme und Feuchtigkeit bieten. Hochbeete k\u00f6nnen aus verschiedenen Materialien wie Holz, Stein oder Metall hergestellt werden."
+                    "title": "Hochbeete: Die besten Tipps für Anfänger",
+                    "text": "Ein Hochbeet ist ein Beet, das höher als ein herkömmliches Beet ist. Hochbeete sind ideal für den Anbau von Gemüse und Kräutern, da sie dem Pflanzenwachstum mehr Wärme und Feuchtigkeit bieten. Hochbeete können aus verschiedenen Materialien wie Holz, Stein oder Metall hergestellt werden."
                 }
             ]
         },
         "shop": {
-            "title": "Hochbeete Shop: Dein Online-Shop f\u00fcr Hochbeete",
-            "metaDescription": "Hochbeete Shop - Hier findest du alles rund um das Thema Hochbeete. Von Erde \u00fcber Pflanzen bis hin zu Zubeh\u00f6r - alles was du f\u00fcr dein Hochbeet brauchst!",
+            "title": "Hochbeete Shop: Dein Online-Shop für Hochbeete",
+            "metaDescription": "Hochbeete Shop - Hier findest du alles rund um das Thema Hochbeete. Von Erde über Pflanzen bis hin zu Zubehör - alles was du für dein Hochbeet brauchst!",
             "robots": "index, follow"
         },
         "hersteller": {
             "title": "Hochbeete: Die besten Hersteller im Vergleich",
-            "metaDescription": "Hochbeete von Top-Markenherstellern. Kaufen Sie Ihr Hochbeet bei uns zum g\u00fcnstigen Preis!",
+            "metaDescription": "Hochbeete von Top-Markenherstellern. Kaufen Sie Ihr Hochbeet bei uns zum günstigen Preis!",
             "robots": "index, follow"
         }
     },
     "productSeo": {
-        "defaultTitle": "Hochbeete - $PRODUKT f\u00fcr Ihren Garten",
-        "defaultMetaDescription": "$PRODUKT von $HERSTELLER ist das ideale Hochbeet f\u00fcr Ihren Garten. $KATEGORIE sorgt f\u00fcr eine optimale Pflanzenentwicklung.",
+        "defaultTitle": "Hochbeete - $PRODUKT für Ihren Garten",
+        "defaultMetaDescription": "$PRODUKT von $HERSTELLER ist das ideale Hochbeet für Ihren Garten. $KATEGORIE sorgt für eine optimale Pflanzenentwicklung.",
         "defaultRobots": "index, follow",
         "products": [
             {
                 "sku": "5637909794",
                 "name": "Ortovox PALA PANTS Kletterhose",
                 "seo": {
-                    "title": "Ortovox PALA PANTS Kletterhose g\u00fcnstig kaufen auf $DOMAIN",
-                    "metaDescription": "DESC: Ortovox PALA PANTS Kletterhose von Ortovox g\u00fcnstig kaufen auf $DOMAIN. Testsieger in der Kategorie Softshellhosen.",
+                    "title": "Ortovox PALA PANTS Kletterhose günstig kaufen auf $DOMAIN",
+                    "metaDescription": "DESC: Ortovox PALA PANTS Kletterhose von Ortovox günstig kaufen auf $DOMAIN. Testsieger in der Kategorie Softshellhosen.",
                     "robots": "index, follow"
                 }
             }
         ]
     },
     "categorySeo": {
-        "defaultTitle": "Hochbeete: $KATEGORIE f\u00fcr sch\u00f6ne G\u00e4rten",
-        "defaultMetaDescription": "Hochbeete $KATEGORIE \u2013 Gartengestaltung mit Hochbeeten. Tipps und Tricks f\u00fcr die Anlage und Pflege von Hochbeeten.",
+        "defaultTitle": "Hochbeete: $KATEGORIE für schöne Gärten",
+        "defaultMetaDescription": "Hochbeete $KATEGORIE – Gartengestaltung mit Hochbeeten. Tipps und Tricks für die Anlage und Pflege von Hochbeeten.",
         "defaultRobots": "index, follow",
         "categories": [
             {
@@ -95,8 +95,8 @@
                 "slug": "sporthosen",
                 "name": "Sporthosen",
                 "seo": {
-                    "title": "Sporthosen g\u00fcnstig kaufen",
-                    "metaDescription": "Alle Sporthosen im \u00dcberblick. Produkte und Testsieger. Finde die richtige Sporthose mit Best-Preis-Garantie.",
+                    "title": "Sporthosen günstig kaufen",
+                    "metaDescription": "Alle Sporthosen im Überblick. Produkte und Testsieger. Finde die richtige Sporthose mit Best-Preis-Garantie.",
                     "robots": "index, follow",
                     "texts": [
                         {
@@ -114,15 +114,15 @@
     },
     "brandSeo": {
         "defaultTitle": "",
-        "defaultMetaDescription": "$HERSTELLER Hochbeete sind die perfekte L\u00f6sung f\u00fcr alle, die in ihrem Garten mehr Pflanzen anbauen m\u00f6chten. Durch die erh\u00f6hte Position ist das Beet leichter zu bew\u00e4ssern und die Pflanzen bekommen mehr Licht.",
+        "defaultMetaDescription": "$HERSTELLER Hochbeete sind die perfekte Lösung für alle, die in ihrem Garten mehr Pflanzen anbauen möchten. Durch die erhöhte Position ist das Beet leichter zu bewässern und die Pflanzen bekommen mehr Licht.",
         "defaultRobots": "index, follow",
         "brands": [
             {
                 "key": "palm",
                 "name": "Palm",
                 "seo": {
-                    "title": "Produkte von Palm g\u00fcnstig kaufen",
-                    "metaDescription": "Alle Produkte von Palm im \u00dcberblick. Produkte und Testsieger. Der Hersteller f\u00fcr Outdoor Produkte.",
+                    "title": "Produkte von Palm günstig kaufen",
+                    "metaDescription": "Alle Produkte von Palm im Überblick. Produkte und Testsieger. Der Hersteller für Outdoor Produkte.",
                     "robots": "index, follow"
                 }
             }
