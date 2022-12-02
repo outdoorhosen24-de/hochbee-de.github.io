@@ -19,7 +19,7 @@
 
     <PopularProducts />
 
-    <SeoText :seoData="seoData" />
+    <SeoText :seoData="seoData" v-if="seoData && 'published' in seoData.seotext && seoData.seotext.published === true"/>
 
     <!-- <Hersteller /> -->
 

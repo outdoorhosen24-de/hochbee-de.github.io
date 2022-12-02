@@ -51,12 +51,15 @@
             "title": "Hochbeete - die beste Art, Ihren Garten zu gestalten!",
             "metaDescription": "Hochbeete für Ihren Garten - kaufen Sie bei uns die besten Hochbeete aus Holz, Metall oder Kunststoff.",
             "robots": "index, follow",
-            "texts": [
-                {
-                    "title": "Hochbeete: Die besten Tipps für Anfänger",
-                    "text": "Ein Hochbeet ist ein Beet, das höher als ein herkömmliches Beet ist. Hochbeete sind ideal für den Anbau von Gemüse und Kräutern, da sie dem Pflanzenwachstum mehr Wärme und Feuchtigkeit bieten. Hochbeete können aus verschiedenen Materialien wie Holz, Stein oder Metall hergestellt werden."
-                }
-            ]
+            "seotext": {
+                "published": false,
+                "content": [
+                    {
+                        "title": "Hochbeete: Die besten Tipps für Anfänger",
+                        "text": "Ein Hochbeet ist ein Beet, das höher als ein herkömmliches Beet ist. Hochbeete sind ideal für den Anbau von Gemüse und Kräutern, da sie dem Pflanzenwachstum mehr Wärme und Feuchtigkeit bieten. Hochbeete können aus verschiedenen Materialien wie Holz, Stein oder Metall hergestellt werden."
+                    }
+                ]
+            }
         },
         "shop": {
             "title": "Hochbeete Shop: Dein Online-Shop für Hochbeete",
