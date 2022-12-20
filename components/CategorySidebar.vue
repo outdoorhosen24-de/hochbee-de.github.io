@@ -2,84 +2,90 @@
   <div>
     <div class="row">
       <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark">
-        <!-- <a
-          href="/"
-          class="
-            d-flex
-            align-items-center
-            mb-3 mb-md-0
-            me-md-auto
-            text-white text-decoration-none
-          "
-        >
-          <span class="fs-4">Kategorien</span>
-        </a> -->
-        <!-- <hr />
+
+          <!-- <a
+        href="/"
+        class="
+          d-flex
+          align-items-center
+          mb-3 mb-md-0
+          me-md-auto
+          text-white text-decoration-none
+        "
+      >
         <span class="fs-4">Kategorien</span>
-        <ul class="nav nav-pills flex-column mb-auto">
-          <li
+      </a> -->
+          <!-- <hr />
+          <span class="fs-4">Kategorien</span>
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li
+              v-for="(category, index) in categories"
+              :key="index"
+              class="nav-item"
+            >
+              <nuxt-link
+                :title="category.seo ? category.seo.title : category.name"
+                :to="
+                  category.type === 'manufacturer'
+                    ? `/marken/${category.key}/`
+                    : `/kategorie/${category.key}/`
+                "
+                class="nav-link text-white"
+              >
+                {{ category.name }}
+              </nuxt-link>
+            </li>
+          </ul>
+          <hr />
+
+          <span class="fs-4">Hersteller</span>
+
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li
+              v-for="(brand, index) in config.brands"
+              :key="index"
+              class="nav-item"
+            >
+              <nuxt-link
+                :title="brand.seo ? brand.seo.title : brand.name"
+                :to="
+                  brand.type === 'manufacturer'
+                    ? `/marken/${brand.key}/`
+                    : `/marken/${brand.key}/`
+                "
+                class="nav-link text-white"
+              >
+                {{ brand.name }}
+              </nuxt-link>
+            </li>
+          </ul>
+          <hr /> -->
+        <div
+            class="dropdown"
             v-for="(category, index) in categories"
             :key="index"
-            class="nav-item"
-          >
-            <nuxt-link
-              :title="category.seo ? category.seo.title : category.name"
-              :to="
-                category.type === 'manufacturer'
-                  ? `/marken/${category.key}/`
-                  : `/kategorie/${category.key}/`
-              "
-              class="nav-link text-white"
-            >
-              {{ category.name }}
-            </nuxt-link>
-          </li>
-        </ul>
-        <hr />
-
-        <span class="fs-4">Hersteller</span>
-
-        <ul class="nav nav-pills flex-column mb-auto">
-          <li
-            v-for="(brand, index) in config.brands"
-            :key="index"
-            class="nav-item"
-          >
-            <nuxt-link
-              :title="brand.seo ? brand.seo.title : brand.name"
-              :to="
-                brand.type === 'manufacturer'
-                  ? `/marken/${brand.key}/`
-                  : `/marken/${brand.key}/`
-              "
-              class="nav-link text-white"
-            >
-              {{ brand.name }}
-            </nuxt-link>
-          </li>
-        </ul>
-        <hr /> -->
-
-        <div
-          class="dropdown"
-          v-for="(category, index) in categories"
-          :key="index"
         >
           <nuxt-link
-            :to="`/kategorie/${category.slug}/`"
-            :title="`${category.name}`"
-            class="d-flex align-items-center text-white text-decoration-none"
-            aria-expanded="false"
+              v-if="!categories.some(c => c.subCategories.includes(category.slug))"
+              :to="`/kategorie/${category.slug}/`"
+              :title="`${category.name}`"
+              class="d-flex align-items-center text-white text-decoration-none"
+              aria-expanded="false"
           >
-            <!-- <img
-              src="https://github.com/mdo.png"
-              alt=""
-              width="32"
-              height="32"
-              class="rounded-circle me-2"
-            /> -->
             <strong>{{ category.name }}</strong>
           </nuxt-link>
+          <ul v-if="category.subCategories.length > 0">
+            <li v-for="subCategory in category.subCategories" :key="subCategory">
+              <nuxt-link
+                  :to="`/kategorie/${subCategory}/`"
+                  :title="`${subCategory}`"
+                  class="d-flex align-items-center text-white text-decoration-none"
+                  aria-expanded="false"
+              >
+                {{ subCategory }}
+              </nuxt-link>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

@@ -42,8 +42,8 @@
         <div class="mb-0 h3">{{ parseFloat(product.price).toFixed(2) }} €</div>
         <div class="mb-3">
           <small
-            v-for="star in product.stars"
-            :key="star"
+            v-for="(star, index) in product.stars"
+            :key="index"
             class="pl-3 fa fa-star text-primary"
           ></small>
           <small

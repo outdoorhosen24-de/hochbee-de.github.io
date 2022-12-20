@@ -7,7 +7,7 @@
         </div>
         <div class="mb-5 h2">Marken</div>
       </div>
-      <div class="col-2 h4 w-50" v-for="(brand, index) in brands" :key="index">
+      <div class="col-2 h4 w-50 text-center" v-for="(brand, index) in brands" :key="index">
         <nuxt-link
           :to="`/marken/${brand.slug}/`"
           :title="`${config.seo.mainKeyword} von ${brand.name}`"

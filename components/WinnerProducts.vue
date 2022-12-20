@@ -10,8 +10,8 @@
       </div>
       <div class="row g-4 justify-content-center">
         <div
-          v-for="product in featured"
-          :key="product.name"
+          v-for="(product, index) in featured"
+          :key="index"
           class="col-lg-4 col-md-6 col-sm-8 col-xs-12 fadeInUp"
         >
           <ProductItem :product="product" />

@@ -37,8 +37,8 @@
           <span>Bewertung</span>
           <div class="mb-1 mt-3">
             <small
-              v-for="star in product.stars"
-              :key="star"
+              v-for="(star, index) in product.stars"
+              :key="index"
               class="pl-3 fa fa-star text-primary"
             ></small>
             <small

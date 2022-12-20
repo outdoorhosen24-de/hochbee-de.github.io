@@ -32,31 +32,21 @@ export default {
   head() {
     return {
       title:
-        this.seoData && this.seoData.seo && this.seoData.seo.title
-          ? this.seoData.seo.title
-          : config.brandSeo.defaultTitle.replaceAll(
-              "$HERSTELLER",
-              this.brandData.name
-            ),
+        this.seoData?.seo?.title || config.brandSeo.defaultTitle
+              .replaceAll("$HERSTELLER", this.brandData.name),
       meta: [
         {
           hid: "description",
           name: "description",
           content:
-            this.seoData && this.seoData.seo && this.seoData.seo.metaDescription
-              ? this.seoData.seo.metaDescription
-              : config.brandSeo.defaultMetaDescription.replaceAll(
-                  "$HERSTELLER",
-                  this.brandData.name
-                ),
+            this.seoData?.seo?.metaDescription || config.brandSeo.defaultMetaDescription
+                  .replaceAll("$HERSTELLER", this.brandData.name),
         },
         {
           hid: "robots",
           name: "robots",
           content:
-            this.seoData && this.seoData.seo && this.seoData.seo.robots
-              ? this.seoData.seo.robots
-              : config.brandSeo.defaultRobots,
+            this.seoData?.seo?.robots || config.brandSeo.defaultRobots,
         },
       ],
     };
