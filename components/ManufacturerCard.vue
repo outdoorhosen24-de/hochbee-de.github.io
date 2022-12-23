@@ -29,8 +29,8 @@
         <p class="mb-0">Preis-Leistungs-Verhältnis</p>
         <div class="mb-1 mt-3">
           <small
-            v-for="star in manufacturer.stars"
-            :key="star"
+            v-for="(star, index) in manufacturer.stars"
+            :key="index"
             class="pl-3 fa fa-star text-primary"
           ></small>
           <small

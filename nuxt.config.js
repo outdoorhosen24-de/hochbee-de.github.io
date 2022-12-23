@@ -69,8 +69,17 @@ export default {
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
         '@nuxtjs/sitemap',
-        '@nuxtjs/robots'
+        '@nuxtjs/robots',
+        'bootstrap-vue/nuxt'
     ],
+
+    // Bootstrap Configuration
+    bootstrapVue: {
+        bootstrapCSS: true, 
+        bootstrapVueCSS: false, 
+        componentPlugins: ['Carousel'], // Components you want to use,
+        directivePlugins: [] 
+    },
 
     // Sitemap
     sitemap: {
@@ -141,11 +150,6 @@ export default {
                 }
             }
         }
-    },
-
-    // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {
-        publicPath: '/assets/'
     },
 
     googleFonts: {
