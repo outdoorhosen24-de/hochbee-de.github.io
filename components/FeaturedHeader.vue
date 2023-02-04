@@ -9,7 +9,7 @@
               <nuxt-img
                 preset="default"
                 class="img-fluid position-absolute w-100 h-100"
-                src="/assets/images/featureHeader/outdoorhose.jpg"
+                src="/assets/images/webpage.webp"
                 :alt="config.seo.mainKeyword"
                 width="612"
                 height="514"

@@ -29,7 +29,7 @@ h1 {
 
 .bg-image {
   min-height: 400px;
-  background-image: url("/assets/images/featureHeader/outdoorhosen.webp");
+  background-image: url("/assets/images/header.webp");
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
