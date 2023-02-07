@@ -1,5 +1,5 @@
 {
-    "configIsReady": false,
+    "configIsReady": true,
     "domain": "hochbee.de",
     "hostname": "https://www.hochbee.de/",
     "email": "hochbee.de@surrealnetworks.io",
@@ -46,10 +46,10 @@
     "seo": {
         "htmlLang": "de",
         "mainKeyword": "Hochbeete",
-        "featureText": "Hochbeete sind ideal für den Anbau von Gemüse und Kräutern. Sie sind leicht zu pflegen und geben Ihrem Garten ein natürliches Aussehen. Im Hochbeet-Shop finden Sie alles, was Sie für Ihr Hochbeet benötigen. Wir bieten Ihnen eine große Auswahl an Hochbeeten, Erde, Dünger und Pflanzen.",
+        "featureText": "Willkommen bei hochbee.de, wo Gartenarbeit auf Innovation trifft! Unsere Auswahl an Hochbeeten macht es einfacher und angenehmer, Ihr eigenes Obst, Gemüse und Kräuter anzubauen. Mit unseren langlebigen und hochwertigen Hochbeeten können Sie in jedem Außenbereich einen schönen und funktionalen Garten anlegen, unabhängig von der Größe oder der Bodenbeschaffenheit. Steigern Sie Ihr Gartenerlebnis und schließen Sie sich der wachsenden Gemeinschaft leidenschaftlicher Gärtner an, indem Sie sich noch heute in unserer Kollektion umsehen.",
         "index": {
-            "title": "Hochbeete - die beste Art, Ihren Garten zu gestalten!",
-            "metaDescription": "Hochbeete für Ihren Garten - kaufen Sie bei uns die besten Hochbeete aus Holz, Metall oder Kunststoff.",
+            "title": "Hochbeete für Ihren Garten günstig auf hochbee.de",
+            "metaDescription": "Kaufen Sie hochwertige Hochbeete auf hochbee.de. Verbessern Sie Ihr Gartenerlebnis mit unseren langlebigen und funktionalen Hochbeeten.",
             "robots": "index, follow",
             "seotext": {
                 "published": false,
@@ -62,19 +62,19 @@
             }
         },
         "shop": {
-            "title": "Hochbeete Shop: Dein Online-Shop für Hochbeete",
-            "metaDescription": "Hochbeete Shop - Hier findest du alles rund um das Thema Hochbeete. Von Erde über Pflanzen bis hin zu Zubehör - alles was du für dein Hochbeet brauchst!",
+            "title": "Hochbee.de | Dein Online-Shop für Hochbeete",
+            "metaDescription": "Hochbeete Shop - Hier findest du alles rund um das Thema Hochbeete: Holz-Hochbeete, Metal-Hochbeete, Frühbeete, Gabionen-Hochbeete und Zubehör.",
             "robots": "index, follow"
         },
         "hersteller": {
             "title": "Hochbeete: Die besten Hersteller im Vergleich",
-            "metaDescription": "Hochbeete von Top-Markenherstellern. Kaufen Sie Ihr Hochbeet bei uns zum günstigen Preis!",
+            "metaDescription": "Übersicht aller Hochbeete und Hersteller im Überblick. Kaufen Sie qualitative Produkte für Ihren Garten auf hochbeete.de. Günstige Preise, schnell geliefert.",
             "robots": "index, follow"
         }
     },
     "productSeo": {
-        "defaultTitle": "Hochbeete - $PRODUKT für Ihren Garten",
-        "defaultMetaDescription": "$PRODUKT von $HERSTELLER ist das ideale Hochbeet für Ihren Garten. $KATEGORIE sorgt für eine optimale Pflanzenentwicklung.",
+        "defaultTitle": "$PRODUKT | hochbee.de",
+        "defaultMetaDescription": "$PRODUKT von $HERSTELLER aus der Kategorie $KATEGORIE ist das ideale Hochbeet für Ihren Garten. Günstigster Preis im Netz auf hochbee.de.",
         "defaultRobots": "index, follow",
         "products": [
             {
@@ -89,8 +89,8 @@
         ]
     },
     "categorySeo": {
-        "defaultTitle": "Hochbeete: $KATEGORIE für schöne Gärten",
-        "defaultMetaDescription": "Hochbeete $KATEGORIE – Gartengestaltung mit Hochbeeten. Tipps und Tricks für die Anlage und Pflege von Hochbeeten.",
+        "defaultTitle": "$KATEGORIE | Produkte günstig shoppen",
+        "defaultMetaDescription": "Top Produkte aus der Kategorie $KATEGORIE finden Sie auf hochbee.de - Ihr schneller Lieferant für $KATEGORIE und vieles mehr für Ihren Garten.",
         "defaultRobots": "index, follow",
         "categories": [
             {
@@ -116,8 +116,8 @@
         ]
     },
     "brandSeo": {
-        "defaultTitle": "",
-        "defaultMetaDescription": "$HERSTELLER Hochbeete sind die perfekte Lösung für alle, die in ihrem Garten mehr Pflanzen anbauen möchten. Durch die erhöhte Position ist das Beet leichter zu bewässern und die Pflanzen bekommen mehr Licht.",
+        "defaultTitle": "Hochbeete und mehr von $HERSTELLER",
+        "defaultMetaDescription": "$HERSTELLER Hochbeete sind die perfekte Lösung für alle, die in ihrem Garten mehr Pflanzen anbauen möchten. Viele weitere Produkte von $HERSTELLER.",
         "defaultRobots": "index, follow",
         "brands": [
             {
