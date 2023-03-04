@@ -2,7 +2,7 @@
     {
         "key": "zubehör für hochbeete",
         "name": "Zubehör für Hochbeete",
-        "slug": "zubehor-fur-hochbeete",
+        "slug": "zubehoer-fuer-hochbeete",
         "productCategory": "Zubehör für Hochbeete",
         "subCategories": []
     },
@@ -16,7 +16,7 @@
     {
         "key": "frühbeete",
         "name": "Frühbeete",
-        "slug": "fruhbeete",
+        "slug": "fruehbeete",
         "productCategory": "Frühbeete",
         "subCategories": []
     },
