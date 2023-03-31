@@ -6,13 +6,55 @@
         <div class="row g-5">
           <div class="col-lg-6 fadeInUp" style="min-height: 400px">
             <div class="position-relative h-100">
-              <nuxt-img
-                class="img-fluid position-absolute w-100 h-100"
-                :src="`${config.imageFolder}${product.localThumbs[0]}`"
-                :alt="product.name"
-                style="object-fit: cover; object-position: center bottom"
-                preset="productHeader"
-              />
+              <div
+                id="headerCarousel"
+                class="carousel slide h-100"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner h-100">
+                  <div
+                    v-for="(image, index) in product.localThumbs"
+                    :key="index"
+                    :class="{
+                      'carousel-item': true,
+                      active: index === 0,
+                      'h-100': true,
+                    }"
+                  >
+                    <nuxt-img
+                      class="img-fluid position-absolute w-100 h-100"
+                      :src="`${config.imageFolder}${image}`"
+                      :alt="product.name"
+                      style="object-fit: cover; object-position: center bottom"
+                      preset="productHeader"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#headerCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#headerCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
           </div>
           <div class="col-lg-6 fadeInUp">
@@ -70,3 +112,18 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+</style>

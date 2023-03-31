@@ -11,30 +11,14 @@
           />
         </NuxtLink>
         <div
-          class="
-            w-100
-            d-flex
-            justify-content-center
-            position-absolute
-            bottom-0
-            start-0
-            mb-4
-          "
+          class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4"
         >
           <NuxtLink
             :to="`/produkt/${product.slug}/`"
-            class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
-            style="border-radius: 30px 0 0 30px"
+            class="flex-shrink-0 btn btn-sm btn-primary px-3"
+            style="border-radius: 30px"
             :title="product.linkTitle"
             >Testbericht</NuxtLink
-          >
-          <a
-            :href="product.shopLink"
-            class="flex-shrink-0 btn btn-sm btn-primary px-3"
-            style="border-radius: 0 30px 30px 0"
-            target="_blank"
-            rel="nofollow noopener"
-            >Bestellen</a
           >
         </div>
       </div>
@@ -120,3 +104,29 @@ export default {
   },
 };
 </script>
+
+
+<style scoped>
+.course-item {
+  min-height: 450px; /* Adjust this value based on your desired minimum height */
+  display: flex;
+  flex-direction: column;
+}
+
+.course-item .text-center {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mb-4 h5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  hyphens: auto;
+}
+</style>
+
