@@ -1,11 +1,7 @@
 <template>
   <div>
-    <ProductHeader
-      :product="product"
-      :productName="product.name"
-      :textContent="product.description"
-      :productImage="`${config.imageFolder}${product.localThumb}`"
-    ></ProductHeader>
+    <ProductHeader :product="product" :productName="product.name" :textContent="product.description"
+      :productImage="`${config.imageFolder}${product.localThumb}`"></ProductHeader>
 
     <!-- About Start -->
     <div class="container-xxl py-5" id="testbericht">
@@ -25,25 +21,14 @@
             </div>
 
             <Checklist />
-            <a
-              class="btn btn-primary py-3 px-5"
-              target="_blank"
-              rel="nofollow noopener"
-              :href="product.shopLink"
-              >Bestellen</a
-            >
+            <a class="btn btn-primary py-3 px-5" target="_blank" rel="nofollow noopener"
+              :href="affiliateLink">Bestellen</a>
           </div>
           <div class="col-lg-4 fadeInUp">
             <ProductCard :product="product" />
             <div class="mt-5">
-              <a
-                class="btn btn-primary py-3 px-5"
-                target="_blank"
-                rel="nofollow noopener"
-                :href="product.shopLink"
-                style="display: block; width: 100%"
-                >{{ product.brand }} Online Shop</a
-              >
+              <a class="btn btn-primary py-3 px-5" target="_blank" rel="nofollow noopener" :href="affiliateLink"
+                style="display: block; width: 100%">{{ product.brand }} Online Shop</a>
             </div>
           </div>
         </div>
@@ -68,6 +53,10 @@ import config from "~/assets/data/config.json";
 import products from "~/assets/data/products.json";
 import db from "~/utils/database.js";
 
+function customEncodeURI(str) {
+  return str.split(' ').join('+');
+}
+
 export default {
   name: "product",
   head() {
@@ -75,15 +64,15 @@ export default {
       title:
         this.seoData && this.seoData.seo && this.seoData.seo.title
           ? this.seoData.seo.title
-              .replaceAll("$PRODUKT", this.product.name)
-              .replaceAll("$HERSTELLER", this.product.brand)
-              .replaceAll("$KATEGORIE", this.category)
-              .replaceAll("$DOMAIN", this.config.domain)
+            .replaceAll("$PRODUKT", this.product.name)
+            .replaceAll("$HERSTELLER", this.product.brand)
+            .replaceAll("$KATEGORIE", this.category)
+            .replaceAll("$DOMAIN", this.config.domain)
           : config.productSeo.defaultTitle
-              .replaceAll("$PRODUKT", this.product.name)
-              .replaceAll("$HERSTELLER", this.product.brand)
-              .replaceAll("$KATEGORIE", this.category)
-              .replaceAll("$DOMAIN", this.config.domain),
+            .replaceAll("$PRODUKT", this.product.name)
+            .replaceAll("$HERSTELLER", this.product.brand)
+            .replaceAll("$KATEGORIE", this.category)
+            .replaceAll("$DOMAIN", this.config.domain),
       meta: [
         {
           hid: "description",
@@ -91,15 +80,15 @@ export default {
           content:
             this.seoData && this.seoData.seo && this.seoData.seo.metaDescription
               ? this.seoData.seo.metaDescription
-                  .replaceAll("$PRODUKT", this.product.name)
-                  .replaceAll("$HERSTELLER", this.product.brand)
-                  .replaceAll("$KATEGORIE", this.category)
-                  .replaceAll("$DOMAIN", this.config.domain)
+                .replaceAll("$PRODUKT", this.product.name)
+                .replaceAll("$HERSTELLER", this.product.brand)
+                .replaceAll("$KATEGORIE", this.category)
+                .replaceAll("$DOMAIN", this.config.domain)
               : config.productSeo.defaultMetaDescription
-                  .replaceAll("$PRODUKT", this.product.name)
-                  .replaceAll("$HERSTELLER", this.product.brand)
-                  .replaceAll("$KATEGORIE", this.category)
-                  .replaceAll("$DOMAIN", this.config.domain),
+                .replaceAll("$PRODUKT", this.product.name)
+                .replaceAll("$HERSTELLER", this.product.brand)
+                .replaceAll("$KATEGORIE", this.category)
+                .replaceAll("$DOMAIN", this.config.domain),
         },
         {
           hid: "robots",
@@ -132,6 +121,23 @@ export default {
       category,
       relevantProducts,
     };
+  },
+  computed: {
+    affiliateLink() {
+      const defaultLink = this.config.affiliate.defaultLink;
+      const productName = customEncodeURI(this.product.name);
+      const url = new URL(defaultLink);
+
+      // Delete the existing 'k' and 'sprefix' parameters
+      url.searchParams.delete('k');
+      url.searchParams.delete('sprefix');
+
+      // Add the new 'k' and 'sprefix' parameters
+      const queryString = `k=${productName}&sprefix=${productName}`;
+      url.search = url.search ? `${url.search}&${queryString}` : `?${queryString}`;
+
+      return url.toString();
+    },
   },
   jsonld() {
     return {
