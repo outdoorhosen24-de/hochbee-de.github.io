@@ -5,35 +5,47 @@
 
     <!-- About Start -->
     <div class="container-xxl py-5" id="testbericht">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-8 fadeInUp" style="min-height: 400px">
-            <h2 class="mb-4">{{ product.name }}</h2>
-            <div v-if="seoData && seoData.seo && seoData.seo.texts">
-              <div v-for="(text, index) in seoData.seo.texts" :key="index">
-                <div class="mb-3 mt-5 h5">
-                  {{ text.title }}
-                </div>
-                <p class="mb-4">
-                  {{ text.text }}
-                </p>
-              </div>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-8 fadeInUp" style="min-height: 400px">
+        <h2 class="mb-4" v-if="!seoData">{{ product.name }}</h2>
+        <div v-if="seoData && seoData.seo && seoData.seo.texts">
+          <div v-for="(text, index) in seoData.seo.texts" :key="index">
+            <div class="mb-3 mt-5 h5">
+              <h2>{{ text.title }}</h2>
             </div>
+            <p class="mb-4" v-html="text.text"></p>
+          </div>
+        </div>
 
-            <Checklist />
-            <a class="btn btn-primary py-3 px-5" target="_blank" rel="nofollow noopener"
-              :href="affiliateLink">Bestellen</a>
-          </div>
-          <div class="col-lg-4 fadeInUp">
-            <ProductCard :product="product" />
-            <div class="mt-5">
-              <a class="btn btn-primary py-3 px-5" target="_blank" rel="nofollow noopener" :href="affiliateLink"
-                style="display: block; width: 100%">{{ product.brand }} Online Shop</a>
-            </div>
-          </div>
+        <Checklist />
+        <a
+          class="btn btn-primary py-3 px-5"
+          target="_blank"
+          rel="nofollow noopener"
+          :href="affiliateLink"
+        >
+          Bestellen
+        </a>
+      </div>
+      <div class="col-lg-4 fadeInUp">
+        <ProductCard :product="product" />
+        <div class="mt-5">
+          <a
+            class="btn btn-primary py-3 px-5"
+            target="_blank"
+            rel="nofollow noopener"
+            :href="affiliateLink"
+            style="display: block; width: 100%"
+          >
+            {{ product.brand }} Online Shop
+          </a>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
     <div class="container">
       <div class="text-center fadeInUp">
         <div class="section-title bg-white text-center text-primary px-3 h6">

@@ -53,7 +53,7 @@
       </ul>
       <div class="sidebar-contact-info mt-4">
         <p class="mb-0">Preis</p>
-        <h3>{{ parseFloat(product.price).toFixed(2) }} EUR</h3>
+        <div class="h3">{{ parseFloat(product.price).toFixed(2) }} EUR</div>
       </div>
     </div>
   </div>
