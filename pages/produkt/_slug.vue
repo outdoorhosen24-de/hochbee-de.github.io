@@ -1,50 +1,54 @@
 <template>
   <div>
-    <ProductHeader :product="product" :productName="product.name" :textContent="product.description"
-      :productImage="`${config.imageFolder}${product.localThumb}`"></ProductHeader>
+    <ProductHeader
+      :product="product"
+      :productName="product.name"
+      :textContent="product.description"
+      :productImage="`${config.imageFolder}${product.localThumb}`"
+    ></ProductHeader>
 
     <!-- About Start -->
     <div class="container-xxl py-5" id="testbericht">
-  <div class="container">
-    <div class="row g-5">
-      <div class="col-lg-8 fadeInUp" style="min-height: 400px">
-        <h2 class="mb-4" v-if="!seoData">{{ product.name }}</h2>
-        <div v-if="seoData && seoData.seo && seoData.seo.texts">
-          <div v-for="(text, index) in seoData.seo.texts" :key="index">
-            <div class="mb-3 mt-5 h5">
-              <h2>{{ text.title }}</h2>
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-8 fadeInUp" style="min-height: 400px">
+            <h2 class="mb-4" v-if="!seoData">{{ product.name }}</h2>
+            <div v-if="seoData && seoData.seo && seoData.seo.texts">
+              <div v-for="(text, index) in seoData.seo.texts" :key="index">
+                <div class="mb-3 mt-5 h5">
+                  <h2>{{ text.title }}</h2>
+                </div>
+                <p class="mb-4" v-html="text.text"></p>
+              </div>
             </div>
-            <p class="mb-4" v-html="text.text"></p>
-          </div>
-        </div>
 
-        <Checklist />
-        <a
-          class="btn btn-primary py-3 px-5"
-          target="_blank"
-          rel="nofollow noopener"
-          :href="affiliateLink"
-        >
-          Bestellen
-        </a>
-      </div>
-      <div class="col-lg-4 fadeInUp">
-        <ProductCard :product="product" />
-        <div class="mt-5">
-          <a
-            class="btn btn-primary py-3 px-5"
-            target="_blank"
-            rel="nofollow noopener"
-            :href="affiliateLink"
-            style="display: block; width: 100%"
-          >
-            {{ product.brand }} Online Shop
-          </a>
+            <Checklist />
+            <a
+              class="btn btn-primary py-3 px-5"
+              target="_blank"
+              rel="nofollow noopener"
+              :href="affiliateLink"
+            >
+              Bestellen
+            </a>
+          </div>
+          <div class="col-lg-4 fadeInUp">
+            <ProductCard :product="product" />
+            <div class="mt-5">
+              <a
+                class="btn btn-primary py-3 px-5"
+                target="_blank"
+                rel="nofollow noopener"
+                :href="affiliateLink"
+                style="display: block; width: 100%"
+              >
+                {{ product.brand }} Online Shop
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
     <div class="container">
       <div class="text-center fadeInUp">
@@ -66,7 +70,7 @@ import products from "~/assets/data/products.json";
 import db from "~/utils/database.js";
 
 function customEncodeURI(str) {
-  return str.split(' ').join('+');
+  return str.split(" ").join("+");
 }
 
 export default {
@@ -76,15 +80,15 @@ export default {
       title:
         this.seoData && this.seoData.seo && this.seoData.seo.title
           ? this.seoData.seo.title
-            .replaceAll("$PRODUKT", this.product.name)
-            .replaceAll("$HERSTELLER", this.product.brand)
-            .replaceAll("$KATEGORIE", this.category)
-            .replaceAll("$DOMAIN", this.config.domain)
+              .replaceAll("$PRODUKT", this.product.name)
+              .replaceAll("$HERSTELLER", this.product.brand)
+              .replaceAll("$KATEGORIE", this.category)
+              .replaceAll("$DOMAIN", this.config.domain)
           : config.productSeo.defaultTitle
-            .replaceAll("$PRODUKT", this.product.name)
-            .replaceAll("$HERSTELLER", this.product.brand)
-            .replaceAll("$KATEGORIE", this.category)
-            .replaceAll("$DOMAIN", this.config.domain),
+              .replaceAll("$PRODUKT", this.product.name)
+              .replaceAll("$HERSTELLER", this.product.brand)
+              .replaceAll("$KATEGORIE", this.category)
+              .replaceAll("$DOMAIN", this.config.domain),
       meta: [
         {
           hid: "description",
@@ -92,15 +96,15 @@ export default {
           content:
             this.seoData && this.seoData.seo && this.seoData.seo.metaDescription
               ? this.seoData.seo.metaDescription
-                .replaceAll("$PRODUKT", this.product.name)
-                .replaceAll("$HERSTELLER", this.product.brand)
-                .replaceAll("$KATEGORIE", this.category)
-                .replaceAll("$DOMAIN", this.config.domain)
+                  .replaceAll("$PRODUKT", this.product.name)
+                  .replaceAll("$HERSTELLER", this.product.brand)
+                  .replaceAll("$KATEGORIE", this.category)
+                  .replaceAll("$DOMAIN", this.config.domain)
               : config.productSeo.defaultMetaDescription
-                .replaceAll("$PRODUKT", this.product.name)
-                .replaceAll("$HERSTELLER", this.product.brand)
-                .replaceAll("$KATEGORIE", this.category)
-                .replaceAll("$DOMAIN", this.config.domain),
+                  .replaceAll("$PRODUKT", this.product.name)
+                  .replaceAll("$HERSTELLER", this.product.brand)
+                  .replaceAll("$KATEGORIE", this.category)
+                  .replaceAll("$DOMAIN", this.config.domain),
         },
         {
           hid: "robots",
@@ -132,24 +136,41 @@ export default {
       seoData,
       category,
       relevantProducts,
+      affiliateLink: config.affiliate.defaultLink,
     };
   },
-  computed: {
-    affiliateLink() {
-      const defaultLink = this.config.affiliate.defaultLink;
-      const productName = customEncodeURI(this.product.name);
-      const url = new URL(defaultLink);
+  methods: {
+    async fetchAffiliateLink() {
+      try {
+        const response = await fetch(
+          "http://localhost:3001/api/x/generate-link",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              domain: "example.com", // replace with your root domain
+              keyword: this.product.name,
+            }),
+          }
+        );
 
-      // Delete the existing 'k' and 'sprefix' parameters
-      url.searchParams.delete('k');
-      url.searchParams.delete('sprefix');
-
-      // Add the new 'k' and 'sprefix' parameters
-      const queryString = `k=${productName}&sprefix=${productName}`;
-      url.search = url.search ? `${url.search}&${queryString}` : `?${queryString}`;
-
-      return url.toString();
+        if (response.ok) {
+          const data = await response.json();
+          this.affiliateLink = data.affiliateLink;
+        } else {
+          console.error(
+            `Failed to generate affiliate link: ${response.status} ${response.statusText}`
+          );
+        }
+      } catch (error) {
+        console.error(`Error generating affiliate link: ${error}`);
+      }
     },
+  },
+  created() {
+    this.fetchAffiliateLink()
   },
   jsonld() {
     return {
