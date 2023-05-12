@@ -112,6 +112,8 @@
               <div class="footer-menu">
                 <nuxt-link to="/" :title="config.title">Home</nuxt-link>
                 <a href="#testsieger">Testsieger</a>
+                <nuxt-link to="/impressum/">Impressum</nuxt-link>
+                <nuxt-link to="/datenschutz/">Datenschutz</nuxt-link>
                 <!-- <a href="#hilfe">Hilfe</a>
                 <a href="#faq">FAQs</a> -->
               </div>
