@@ -6,7 +6,7 @@
           <nuxt-img
             preset="productThumbnail"
             class="img-fluid"
-            :src="`${config.imageFolder}${product.localThumbs[0]}`"
+            :src="productThumbnail"
             :alt="product.linkTitle"
           />
         </NuxtLink>
@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="text-center p-4 pb-0">
-        <div class="mb-0 h3">{{ parseFloat(product.price).toFixed(2) }} €</div>
+        <div class="mb-0 h3">{{ calculatedPrice }} €</div>
         <div class="mb-3">
           <small
             v-for="star in product.stars"
@@ -74,6 +74,8 @@
 import config from "~/assets/data/config.json";
 import categories from "~/assets/data/categories.json";
 import brands from "~/assets/data/brands.json";
+import calculatePrice from "~/modules/calculatePrice";
+import getProductThumbnail from "~/modules/getProductThumbnail";
 
 var he = require("he");
 
@@ -83,19 +85,32 @@ export default {
     product: Object,
   },
   data() {
-    // get the category data
-    let categoryData = categories.find(
-      (category) => category.name === this.product.category
-    );
-
-    // get the brand data
-    let brandData = brands.find((brand) => brand.name === this.product.brand);
-
     return {
       config,
-      categoryData,
-      brandData,
     };
+  },
+  computed: {
+    calculatedPrice() {
+      return calculatePrice(this.product.price);
+    },
+    productThumbnail() {
+      return getProductThumbnail(this.product);
+    },
+    categoryData() {
+      let categoryName = this.product.category;
+      if (
+        !categoryName &&
+        this.product.categories &&
+        this.product.categories.length > 1
+      ) {
+        categoryName =
+          this.product.categories[this.product.categories.length - 2];
+      }
+      return categories.find((category) => category.name === categoryName);
+    },
+    brandData() {
+      return brands.find((brand) => brand.name === this.product.brand);
+    },
   },
   methods: {
     decode: function decodeEntity(str) {
@@ -104,7 +119,6 @@ export default {
   },
 };
 </script>
-
 
 <style scoped>
 .course-item {
